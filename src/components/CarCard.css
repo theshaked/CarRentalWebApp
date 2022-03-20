@@ -1,0 +1,15 @@
+.CarCard {
+  border-color: black;
+  border: 2px solid black;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.CarCard img {
+  height: 150px;
+  margin: 10px;
+}
+
+.CarCard li {
+  display: block;
+}

@@ -1,7 +1,14 @@
+import "./App.css";
+import Navbar from "./components/Navbar";
+import CarCard from "./components/CarCard";
+
 function App() {
   return (
-    <div className="top">
-      <h1>Hello</h1>
+    <div className="App">
+      <header>
+        <Navbar></Navbar>
+      </header>
+      <CarCard brandName="Kia" />
     </div>
   );
 }
