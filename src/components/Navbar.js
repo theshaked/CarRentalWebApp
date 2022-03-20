@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -10,16 +11,16 @@ const Navbar = () => {
       />
       <ul>
         <li>
-          <a href="default.asp">Home</a>
+          <a href="/home">Home</a>
         </li>
         <li>
-          <a href="news.asp">Login</a>
+          <a href="/car_picker">Car Picker</a>
         </li>
         <li>
-          <a href="contact.asp">Maker</a>
+          <a href="/temp">Temp</a>
         </li>
         <li>
-          <a href="about.asp">Info</a>
+          <a href="/login">Login</a>
         </li>
       </ul>
     </div>

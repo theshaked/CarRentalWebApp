@@ -3,8 +3,9 @@
 }
 body {
   margin: 0px;
+  background-color: gainsboro;
 }
 
-.CarCard {
+.CarCards {
   margin: 10px;
 }

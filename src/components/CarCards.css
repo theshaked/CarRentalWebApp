@@ -1,0 +1,9 @@
+.CarCards {
+  background-color: cadetblue;
+}
+
+.CarCards ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}

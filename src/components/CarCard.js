@@ -1,17 +1,19 @@
 import "./CarCard.css";
+import { Link } from "react-router-dom";
 
-const CarCard = ({ brandName }) => {
+const CarCard = ({ brandName, imgsrc, slogan }) => {
   return (
-    <div className="CarCard">
-      <img
-        alt="car"
-        src="https://images.auto.co.il/Attachment/Gallery/243916/1654690/Kia-Picanto-2021-1600-15-removebg.png?width=480"
-      />
-      <li>
-        <h2>{brandName}</h2>
-        <h3>{brandName} is the best car</h3>
-      </li>
-    </div>
+    <Link to={`/car_picker/${brandName}`}>
+      <div className="CarCard">
+        <img alt="car" src={imgsrc} />
+        <li>
+          <h2>{brandName}</h2>
+          <h3>
+            {brandName} - {slogan}
+          </h3>
+        </li>
+      </div>
+    </Link>
   );
 };
 

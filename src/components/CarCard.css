@@ -2,7 +2,17 @@
   border-color: black;
   border: 2px solid black;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
+  background-color: white;
+  width: 500px;
+}
+
+.CarCard h2 {
+  margin: 10px;
+}
+
+.CarCard h3 {
+  margin: 10px;
 }
 
 .CarCard img {
