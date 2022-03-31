@@ -16,18 +16,17 @@
   display: flex;
 }
 
-.Navbar li {
+.Navbar a {
   display: block;
   background-color: #424242;
   padding: 10px 20px;
   margin: -10px 2px;
-  border: 2px solid rgb(255, 255, 255);
   font-size: larger;
 
-  border-radius: 40px;
+  border-radius: 15px;
 }
 
-.Navbar li:hover {
+.Navbar a:hover {
   background-color: steelblue;
 }
 

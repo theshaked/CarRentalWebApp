@@ -1,7 +1,8 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = () =>
+{
   return (
     <div className="Navbar">
       <img
@@ -10,18 +11,10 @@ const Navbar = () => {
         src="https://cdn-icons-png.flaticon.com/512/744/744465.png"
       />
       <ul>
-        <li>
-          <a href="/home">Home</a>
-        </li>
-        <li>
-          <a href="/car_picker">Car Picker</a>
-        </li>
-        <li>
-          <a href="/temp">Temp</a>
-        </li>
-        <li>
-          <a href="/login">Login</a>
-        </li>
+        <Link to="/home">Home</Link>
+        <Link to="/car_picker">Car Picker</Link>
+        <Link to="/temp">Temp</Link>
+        <Link to="/login">Login</Link>
       </ul>
     </div>
   );

@@ -1,15 +1,16 @@
 import "./CarCard.css";
 import { Link } from "react-router-dom";
 
-const CarCard = ({ brandName, imgsrc, slogan }) => {
+const CarCard = ({ type, imgsrc, slogan }) =>
+{
   return (
-    <Link to={`/car_picker/${brandName}`}>
+    <Link to={type}>
       <div className="CarCard">
         <img alt="car" src={imgsrc} />
         <li>
-          <h2>{brandName}</h2>
+          <h2>{type}</h2>
           <h3>
-            {brandName} - {slogan}
+            {type} - {slogan}
           </h3>
         </li>
       </div>
