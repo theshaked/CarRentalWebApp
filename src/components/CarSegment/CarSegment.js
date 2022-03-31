@@ -1,11 +1,11 @@
-import "./CarCard.css";
+import "./CarSegment.css";
 import { Link } from "react-router-dom";
 
-const CarCard = ({ type, imgsrc, slogan }) =>
+const CarSegment = ({ type, imgsrc, slogan }) =>
 {
   return (
     <Link to={type}>
-      <div className="CarCard">
+      <div className="CarSegment">
         <img alt="car" src={imgsrc} />
         <li>
           <h2>{type}</h2>
@@ -18,4 +18,4 @@ const CarCard = ({ type, imgsrc, slogan }) =>
   );
 };
 
-export default CarCard;
+export default CarSegment;

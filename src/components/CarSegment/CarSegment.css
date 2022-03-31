@@ -1,25 +1,26 @@
-.CarCard {
+.CarSegment {
   border-color: black;
   border: 2px solid black;
   display: flex;
   justify-content: space-around;
   background-color: white;
   width: 500px;
+  margin: 5px;
 }
 
-.CarCard h2 {
+.CarSegment h2 {
   margin: 10px;
 }
 
-.CarCard h3 {
+.CarSegment h3 {
   margin: 10px;
 }
 
-.CarCard img {
+.CarSegment img {
   height: 150px;
   margin: 10px;
 }
 
-.CarCard li {
+.CarSegment li {
   display: block;
 }

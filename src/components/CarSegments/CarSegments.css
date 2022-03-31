@@ -1,8 +1,8 @@
-.CarCards {
+.CarSegments {
   background-color: cadetblue;
 }
 
-.CarCards ul {
+.CarSegments ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

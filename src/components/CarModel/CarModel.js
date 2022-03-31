@@ -1,3 +1,4 @@
+import "./CarModel.css";
 import { useParams } from "react-router-dom";
 
 const carsInventory = [
@@ -28,14 +29,18 @@ const CarModel = () =>
 {
     const { car } = useParams();
     return (
-        <div>
-            <h1>This is all the {car} cars in our inventory:</h1>
+        <div className="CarModel">
+            {/* <h1>This is all the {car} cars in our inventory:</h1>*/}
 
-            <h3>{carsInventory[0].brand} - {carsInventory[0].modelName}</h3>
-            <h4>year {carsInventory[0].year} , {carsInventory[0].pricePerDay}₪ </h4>
+            <h2> {carsInventory[0].brand} - {carsInventory[0].modelName}</h2>
+            <img alt="car" src={carsInventory[0].img} />
+            <div className="info">
+                <h2>שנת עליה לכביש: {carsInventory[0].year} </h2>
+                <h2>מחיר ליום: {carsInventory[0].pricePerDay}₪ </h2>
+                <h2>הערות: {carsInventory[0].review}</h2>
 
-            <h3>{carsInventory[1].brand} - {carsInventory[1].modelName}</h3>
-            <h4>year {carsInventory[1].year} , {carsInventory[1].pricePerDay}₪ </h4>
+            </div>
+
         </div>
     );
 };

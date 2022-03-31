@@ -1,0 +1,25 @@
+.CarModel {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: auto auto;
+    border: 2px solid black;
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+    width: 800px;
+  }
+
+ .CarModel h2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .CarModel img{
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+  }
+  .CarModel .info{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }

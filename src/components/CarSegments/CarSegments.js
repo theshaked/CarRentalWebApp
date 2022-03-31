@@ -1,5 +1,5 @@
-import CarCard from "./CarCard";
-import "./CarCards.css";
+import CarSegment from "../CarSegment/CarSegment";
+import "./CarSegments.css";
 
 const carsArr = [
   {
@@ -18,17 +18,17 @@ const carsArr = [
   },
 ];
 
-const CarCards = () =>
+const CarSegments = () =>
 {
   return (
-    <div className="CarCards">
+    <div className="CarSegments">
       <ul>
         {carsArr.map((car) => (
-          <CarCard type={car.type} imgsrc={car.img} slogan={car.slogan} />
+          <CarSegment type={car.type} imgsrc={car.img} slogan={car.slogan} />
         ))}
       </ul>
     </div>
   );
 };
 
-export default CarCards;
+export default CarSegments;
