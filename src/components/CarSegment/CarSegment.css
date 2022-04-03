@@ -1,10 +1,10 @@
 .CarSegment {
-  border-color: black;
   border: 2px solid black;
+  border-radius: 10px;
   display: flex;
   justify-content: space-around;
   background-color: white;
-  width: 500px;
+  width: 600px;
   margin: 5px;
 }
 

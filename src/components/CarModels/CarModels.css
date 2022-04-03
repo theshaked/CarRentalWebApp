@@ -1,0 +1,10 @@
+.CarModels h1{
+  justify-content: space-around;
+  text-align: center;
+}
+
+.CarModels ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}

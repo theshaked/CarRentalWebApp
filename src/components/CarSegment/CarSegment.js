@@ -1,7 +1,7 @@
 import "./CarSegment.css";
 import { Link } from "react-router-dom";
 
-const CarSegment = ({ type, imgsrc, slogan }) =>
+const CarSegment = ({ type, imgsrc, review }) =>
 {
   return (
     <Link to={type}>
@@ -10,7 +10,7 @@ const CarSegment = ({ type, imgsrc, slogan }) =>
         <li>
           <h2>{type}</h2>
           <h3>
-            {type} - {slogan}
+            {type} - {review}
           </h3>
         </li>
       </div>
