@@ -1,0 +1,47 @@
+.SignUp {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.SignUp *{
+  border-radius: 10px;
+}
+
+.SignUp form{
+  display: grid;
+  padding: 1.2em;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.SignUp label{
+  display: grid;
+  grid-template-columns: auto 70%;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.SignUp input {
+  border: 0px;
+  font-size: 1rem;
+  margin: 0.25rem;
+  padding: 0.5rem;
+}
+
+.SignUp input:valid {
+  border: 2px solid yellowgreen;
+  
+}
+.SignUp #submit{
+  background: steelblue;
+  color: white;
+  font-size: x-large;
+  border: 0px;
+}
+
+.SignUp .NoBorder:valid
+{
+  border: 0px;
+}
+
+
