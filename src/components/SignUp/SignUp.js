@@ -1,3 +1,6 @@
+import ComboBoxEntry from "../ComboBoxEntry/ComboBoxEntry";
+import TextEntry from "../TextEntry/TextEntry";
+import ImgEntry from "../ImgEntry/ImgEntry";
 import "./SignUp.css";
 
 const SignUp = () =>
@@ -15,48 +18,29 @@ const SignUp = () =>
   return (
     <div className="SignUp">
       <h1>Sign Up</h1>
-      <form onSubmit={onSubmit} >
-        <label>
-          <p>Full Name:</p>
-          <input required type="text" name="fullname" pattern="[A-Za-z\u0590-\u05FF]{3,20}" minLength="3" maxLength="20"
-            title="At least 3 letters" />
-        </label>
-        <label>
-          <p>User Name:</p>
-          <input required type="text" name="username" pattern="^[a-zA-Z][a-zA-Z0-9]{3,19}$" minLength="3" maxLength="20"
-            title="Must start with a letter and length between 4-20 characters" />
-        </label>
-        <label>
-          <p>Password:</p>
-          <input required type="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" minLength="8" maxLength="20"
-            title="Minimum eight characters, at least one letter and one number" />
-        </label>
-        <label>
-          <p>Email:</p>
-          <input required type="email" name="email" minLength="5" maxLength="30"
-            title="Please enter a valid Email" />
-        </label>
-        <label>
-          <p>ID:</p>
-          <input required type="text" name="id" pattern="[0-9]{8,9}$" minLength="8" maxLength="9"
-            title="length must be between 8-9 characters" />
-        </label>
-        <label>
-          <p>Birthday:</p>
-          <input className="NoBorder" type="date" name="birthday" />
-        </label>
-        <label>
-          <p>Gender:</p>
-          <select name="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select>
-        </label>
-        <label>
-          <p>image:</p>
-          <input className="NoBorder" type="file" name="image" />
-        </label>
+      <form onSubmit={onSubmit}>
+
+        <TextEntry fieldKey="fullname" fieldName="Full Name" required={true} fieldType="text" minLength="3" maxLength="20"
+          validityMsg="At least 3 letters" regex="[A-Za-z\u0590-\u05FF]{3,20}" />
+
+        <TextEntry fieldKey="username" fieldName="Username" required={true} fieldType="text" minLength="3" maxLength="20"
+          validityMsg="Must start with a letter and length between 4-20 characters" regex="^[a-zA-Z][a-zA-Z0-9]{3,19}$" />
+
+        <TextEntry fieldKey="password" fieldName="Password" required={true} fieldType="password" minLength="8" maxLength="20"
+          validityMsg="Minimum eight characters, at least one letter and one number" regex="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" />
+
+        <TextEntry fieldKey="email" fieldName="Email" required={true} fieldType="email" minLength="5" maxLength="30"
+          validityMsg="Please enter a valid Email" />
+
+        <TextEntry fieldKey="id" fieldName="ID" required={true} fieldType="text" minLength="8" maxLength="9"
+          validityMsg="length must be between 8-9 characters" regex="[0-9]{8,9}$" />
+
+        <TextEntry className="NoBorder" fieldKey="birthday" required={false} fieldName="Birthday" fieldType="date" />
+
+        <ComboBoxEntry fieldKey="gender" fieldName="Gender" options={["Male", "Female", "Other"]} />
+
+        <ImgEntry required={false} fieldKey="image" fieldName="Image" />
+
         <input className="Grow" id="submit" type="submit" />
       </form >
     </div >

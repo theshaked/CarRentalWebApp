@@ -1,0 +1,20 @@
+.ImgEntry{
+display: grid;
+grid-template-columns: auto 70%;
+justify-content: space-between;
+}
+
+.ImgEntry label{
+    margin: 5px;
+}
+  
+.ImgEntry input {
+    border: 0px;
+    font-size: 1rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
+  }
+  
+.ImgEntry input:focus{
+    outline: none;
+}

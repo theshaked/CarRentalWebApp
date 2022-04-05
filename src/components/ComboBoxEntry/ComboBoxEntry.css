@@ -1,0 +1,16 @@
+.ComboBoxEntry{
+    display: grid;
+    grid-template-columns: auto 70%;
+    justify-content: space-between;
+    }
+    
+    .ComboBoxEntry label{
+        margin: 5px;
+    }
+      
+    .ComboBoxEntry select {
+        border: 0px;
+        font-size: 1rem;
+        margin: 0.25rem;
+        padding: 0.5rem;
+      }

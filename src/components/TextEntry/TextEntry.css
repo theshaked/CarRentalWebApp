@@ -1,0 +1,29 @@
+.TextEntry{
+display: grid;
+grid-template-columns: auto 70%;
+justify-content: space-between;
+}
+
+.TextEntry label{
+    margin: 5px;
+}
+  
+.TextEntry input {
+    border: 0px;
+    font-size: 1rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
+  }
+  
+.TextEntry input:focus{
+    outline: none;
+}
+
+  .TextEntry input:valid {
+    border: 2px solid green;
+  }
+  
+  .TextEntry .NoBorder:valid
+  {
+    border: 0px;
+  }
