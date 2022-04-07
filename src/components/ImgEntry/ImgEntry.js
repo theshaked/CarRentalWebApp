@@ -1,11 +1,11 @@
 import "./ImgEntry.css";
 
-const ImgEntry = ({ fieldKey, fieldName, required }) =>
+const ImgEntry = ({ fieldName, required, onChange }) =>
 {
     return (
         <div className="ImgEntry">
             <p>{fieldName}:</p>
-            <input required={required} type="file" name={fieldKey} />
+            <input required={required} type="file" onChange={e => onChange(e.target.value)} />
         </div>
     );
 };

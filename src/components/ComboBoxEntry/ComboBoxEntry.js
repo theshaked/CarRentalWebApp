@@ -1,11 +1,11 @@
 import "./ComboBoxEntry.css";
 
-const ComboBoxEntry = ({ fieldKey, fieldName, options }) =>
+const ComboBoxEntry = ({ fieldName, options, onChange }) =>
 {
     return (
         <div className="ComboBoxEntry">
             <p>{fieldName}:</p>
-            <select name={fieldKey}>
+            <select onChange={e => onChange(e.target.value)}>
                 {options.map((option) => (
                     <option value={option}>{option}</option>
                 ))}
