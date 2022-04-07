@@ -3,6 +3,7 @@
   margin: 0px;
   display: flex;
   justify-content: space-between;
+  color: rgb(255, 255, 255);
 }
 
 #Logo {
@@ -31,6 +32,6 @@
 }
 
 .Navbar a {
-  color: rgb(255, 255, 255);
+  
   text-decoration: none;
 }

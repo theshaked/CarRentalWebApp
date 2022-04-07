@@ -2,7 +2,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import logo from '../../images/LogoWhite.png';
 
-const Navbar = () =>
+const Navbar = ({ token }) =>
 {
   return (
     <div className="Navbar">
@@ -15,7 +15,10 @@ const Navbar = () =>
         <Link to="/home">Home</Link>
         <Link to="/CarPicker">Car Picker</Link>
         <Link to="/SignUp">Sign-Up</Link>
-        <Link to="/login">Login</Link>
+        {token ?
+          <Link to="/MyAccont">{token}'s Accont</Link> :
+          <Link to="/Login">Login</Link>
+        }
       </ul>
     </div>
   );
