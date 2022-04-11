@@ -21,7 +21,7 @@ const Login = ({ setToken }) =>
             <form onSubmit={onSubmit}>
                 <TextEntry onChange={setUsername} fieldName="Username" required={true} fieldType="text" borderless={true} />
 
-                <TextEntry classname="NoBorder" onChange={setPassword} fieldName="Password" required={true} fieldType="password" borderless={true} />
+                <TextEntry onChange={setPassword} fieldName="Password" required={true} fieldType="password" borderless={true} />
 
                 <input className="Grow" id="signIn" type="submit" />
             </form >

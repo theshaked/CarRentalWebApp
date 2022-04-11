@@ -43,7 +43,7 @@ const SignUp = () =>
         <TextEntry onChange={setId} fieldName="ID" required={true} fieldType="text" minLength="8" maxLength="9"
           validityMsg="length must be between 8-9 characters" regex="[0-9]{8,9}$" />
 
-        <TextEntry onChange={setBirthday} className="NoBorder" required={false} fieldName="Birthday" fieldType="date" />
+        <TextEntry borderless={true} onChange={setBirthday} required={false} fieldName="Birthday" fieldType="date" />
 
         <ComboBoxEntry onChange={setGender} fieldName="Gender" options={genderOptions} />
 

@@ -1,4 +1,7 @@
 import CarSegment from "../CarSegment/CarSegment";
+import DateStartFinish from "../DateStartFinish/DateStartFinish";
+import { DaysBetweenDates } from "../../Utils/DateTime"
+import { useState, useEffect } from 'react'
 import "./CarSegments.css";
 
 const carsArr = [
@@ -24,8 +27,22 @@ const carsArr = [
 
 const CarSegments = () =>
 {
+  const [validDates, setValidDates] = useState();
+  const [startDate, setStartDate] = useState();
+  const [finishDate, setFinishDate] = useState();
+  const [duration, setDuration] = useState();
+
+  useEffect(() =>
+  {
+    validDates && setDuration(DaysBetweenDates(startDate, finishDate));
+  }, [startDate, finishDate]);
+
   return (
     <div className="CarSegments">
+      <div className="DateRow">
+        <DateStartFinish setValidDates={setValidDates} setStartDate={setStartDate} setFinishDate={setFinishDate} />
+        {validDates ? <h1>Rental time of {duration} Days</h1> : <h1>Please insert valid dates</h1>}
+      </div>
       <ul>
         {carsArr.map((car) => (
           <CarSegment type={car.type} imgsrc={car.img} review={car.review} />

@@ -1,26 +1,21 @@
 .CarModel {
-  display: grid;
-  grid-template-columns: 50% auto;
-  grid-template-rows: auto auto;
-  border: 2px solid gray;
-    border-radius: 5px;
-    background-color: white;
-    margin: 5px;
+  display: block;
+  border-radius: 10px;
+  background-color: rgb(210, 210, 220);
+  width: 450px;
+  }
+  
+  .CarModel *{
+    border-radius: 10px;
     text-align: center;
-    width: 800px;
   }
 
- .CarModel h2{
-    grid-column-start: 1;
-    grid-column-end: 3;
+  .CarModel .flex-row{
+    display: flex;
+    justify-content: space-around;
   }
 
   .CarModel img{
-    grid-column: 1;
-    grid-row: 2;
+    background: radial-gradient(ellipse at center, gray 20%, transparent);
     width: 100%;
-  }
-  .CarModel .info{
-    grid-column-start: 2;
-    grid-column-end: 3;
   }

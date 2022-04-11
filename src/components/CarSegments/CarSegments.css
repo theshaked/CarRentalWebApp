@@ -1,6 +1,12 @@
 .CarSegments {
 }
 
+.CarSegments .DateRow{
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+}
+
 .CarSegments ul {
   display: flex;
   flex-wrap: wrap;

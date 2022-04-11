@@ -8,3 +8,6 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
+.CarModels .CarModel{
+  margin: 10px;
+}
