@@ -6,7 +6,7 @@
   color: rgb(255, 255, 255);
 }
 
-#Logo {
+.Navbar #Logo {
   height: 50px;
   width: 100px;
   align-self: center;

@@ -1,21 +1,53 @@
 .CarModel {
-  display: block;
-  border-radius: 10px;
-  background-color: rgb(210, 210, 220);
-  width: 450px;
-  }
-  
-  .CarModel *{
-    border-radius: 10px;
-    text-align: center;
-  }
+  display: grid;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 300px;
+}
 
-  .CarModel .flex-row{
-    display: flex;
-    justify-content: space-around;
-  }
+.CarModel * {
+  padding: 1px;
+  font-size: 18px;
+}
 
-  .CarModel img{
-    background: radial-gradient(ellipse at center, gray 20%, transparent);
-    width: 100%;
-  }
+.CarModel .flex-row {
+  display: flex;
+  margin: 10px;
+}
+
+.CarModel .bold {
+  font-weight: bold;
+}
+
+.CarModel #Logo {
+  height: 100%;
+  width: 50px;
+}
+
+.CarModel p {
+  margin: 5px;
+}
+
+.CarModel line {
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  margin: 0.5rem;
+}
+
+.CarModel tr {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 0.5rem;
+}
+
+.CarModel #Logo {
+  height: 100%;
+}
+
+.CarModel #Car {
+  background: radial-gradient(ellipse at center, rgba(70, 131, 180, 0.5) 10%, transparent);
+  width: 100%;
+}
+
+.CarModel button {
+  margin: 5% 10%;
+}
