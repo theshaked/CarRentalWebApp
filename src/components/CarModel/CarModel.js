@@ -7,7 +7,7 @@ const CarModel = ({ model }) =>
 
             <img alt="car" id="Car" src={model.img} />
             <div className="flex-row">
-                <img id="Logo" alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Opel-Logo_2017.svg" />
+                <img id="Logo" alt="logo" src={model.logo} />
                 <div className="bold">
                     <p>{model.brand}</p>
                     <p>{model.modelName}</p>

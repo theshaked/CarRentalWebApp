@@ -2,6 +2,7 @@
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 body {
   margin: 0px;
   background-color: gainsboro;
@@ -12,7 +13,7 @@ body {
   margin: 10px;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -32,9 +33,13 @@ button {
   background: steelblue;
   color: white;
   border: 0px;
+  transition: transform 0.1s;
+  cursor: pointer;
+  font-size: xx-large;
+  border-radius: 5px;
 }
 
 button:hover {
   transition: all .1s ease-in-out;
-  transform: scale(1.03);
+  transform: scale(1.1);
 }

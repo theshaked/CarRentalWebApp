@@ -1,0 +1,59 @@
+{
+  "Cars": [
+    {
+      "key": 1,
+      "brand": "Kia",
+      "modelName": "Picanto",
+      "type": "Mini",
+      "year": "2018",
+      "pricePerDay": "250",
+      "review": "Compact vehicle for everyday use in the city",
+      "img": "https://cdn.imagin.studio/getImage?angle=01&customer=carwow&make=kia&modelFamily=picanto&modelVariant=hatchback&modelYear=2022&paintDescription=solid---honey-bee+D8BD42&paintId=156707&tailoring=carwow&width=430&zoomLevel=60&zoomType=fullscreen",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b6/KIA_logo3.svg"
+    },
+    {
+      "key": 2,
+      "brand": "Opel",
+      "modelName": "Corsa",
+      "type": "Super-Mini",
+      "year": "2022",
+      "pricePerDay": "500",
+      "review": "An uncompromising vehicle with a price tag",
+      "img": "https://cdn.imagin.studio/getImage?angle=01&billingTag=web&customer=carwow&make=vauxhall&modelFamily=corsa&modelVariant=hatchback&modelYear=2020&paintDescription=metallic---navy-blue+1B478E&paintId=42738&tailoring=carwow&width=800&zoomLevel=0&zoomType=fullscreen",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Opel-Logo_2017.svg"
+    },
+    {
+      "key": 3,
+      "brand": "Hyundai",
+      "modelName": "i-10",
+      "type": "Mini",
+      "year": "2022",
+      "pricePerDay": "350",
+      "review": "A batata car for you",
+      "img": "https://cdn.imagin.studio/getImage?angle=01&customer=carwow&make=hyundai&modelFamily=i10&modelVariant=hatchback&modelYear=2022&paintDescription=pearl---mangrove-green+6B9196&paintId=165256&tailoring=carwow&width=430&zoomLevel=60&zoomType=fullscreen",
+      "logo": "https://pic.onlinewebfonts.com/svg/img_537268.png"
+    },
+    {
+      "key": 4,
+      "brand": "Seat",
+      "modelName": "Ibiza",
+      "type": "Super-Mini",
+      "year": "2021",
+      "pricePerDay": "450",
+      "review": "An excellent vehicle for a young driver, a winning combination of performance and pose",
+      "img": "https://cdn.imagin.studio/getImage?angle=01&billingTag=web&customer=carwow&make=seat&modelFamily=ibiza&modelVariant=hatchback&modelYear=2018&paintDescription=solid---mediterranean-blue+0675D1&paintId=112014&tailoring=carwow&width=800&zoomLevel=0&zoomType=fullscreen",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/SEAT_Logo_from_2017.svg"
+    },
+    {
+      "key": 5,
+      "brand": "Toyota",
+      "modelName": "Yaris ",
+      "type": "Super-Mini",
+      "year": "2021",
+      "pricePerDay": "500",
+      "review": "Small hybrid car with sporty styling",
+      "img": "https://cdn.imagin.studio/getImage?angle=01&customer=carwow&make=toyota&modelFamily=yaris&modelVariant=hatchback&modelYear=2021&paintDescription=solid---pure-white+FAFAFA&paintId=30598&tailoring=carwow&width=430&zoomLevel=60&zoomType=fullscreen",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Toyota_EU.svg"
+    }
+  ]
+}
