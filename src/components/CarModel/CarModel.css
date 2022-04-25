@@ -2,7 +2,8 @@
   display: grid;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.2);
-  width: 300px;
+  max-width: 300px;
+  min-width: 200px;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -21,10 +22,10 @@
 }
 
 .CarModel #Logo {
-  height: 50px;
   width: 50px;
   margin-right: 10px;
   object-fit: scale-down;
+  filter: brightness(0);
 }
 
 .CarModel p {
@@ -43,8 +44,9 @@
 }
 
 .CarModel #Car {
-  background: radial-gradient(ellipse at center, rgba(100, 100, 150, 0.4) 10%, transparent);
+  background: radial-gradient(ellipse at center, rgba(100, 100, 150, 0.3) 10%, transparent);
   width: 100%;
+  background-color: transparent;
 }
 
 .CarModel button {

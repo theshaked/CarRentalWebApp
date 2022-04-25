@@ -3,7 +3,7 @@ import "./CarModel.css";
 const CarModel = ({ model }) =>
 {
     return (
-        <div className="CarModel">
+        <div className="CarModel Grow">
 
             <img alt="car" id="Car" src={model.img} />
             <div className="flex-row">
@@ -28,7 +28,7 @@ const CarModel = ({ model }) =>
                 <td>Price Per Week:</td>
                 <td>{7 * model.pricePerDay}₪</td>
             </tr>
-            <button>הזמן</button>
+            <button>Order!</button>
         </div>
     );
 };
