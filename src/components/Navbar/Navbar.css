@@ -6,11 +6,12 @@
   position: sticky;
   width: 100%;
   top: 0;
+  z-index: 9999;
+  height: 50px;
 }
 
 .Navbar #Logo {
-  height: 50px;
-  width: 100px;
+  height: 75%;
   align-self: center;
   margin: 0px 20px;
 }
