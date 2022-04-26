@@ -23,10 +23,9 @@
 .Navbar a {
   display: block;
   background-color: #424242;
-  padding: 10px 20px;
+  padding: 5px 20px;
   margin: -10px 3px;
   font-size: larger;
-
   border-radius: 15px;
 }
 

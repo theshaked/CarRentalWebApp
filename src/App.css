@@ -1,6 +1,6 @@
 .App {
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Segoe UI, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -9,8 +9,16 @@ body {
 
 }
 
-.CarCards {
+.LightCard {
+  display: grid;
+  border-radius: 15px;
   margin: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bold {
+  font-weight: bold;
 }
 
 a {
@@ -36,10 +44,17 @@ button {
   transition: transform 0.1s;
   cursor: pointer;
   font-size: xx-large;
+  font-weight: bold;
   border-radius: 5px;
 }
 
 button:hover {
   transition: all .1s ease-in-out;
-  transform: scale(1.1);
+  box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .3);
+  color: white;
+}
+
+button:active {
+  transition: all .1s ease-in-out;
+  transform: scale(0.95);
 }

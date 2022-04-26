@@ -1,24 +1,20 @@
 .CarSegment {
-  border: 2px solid gray;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  width: 600px;
-  margin: 5px;
+  width: 250px;
+  height: 300px;
 }
 
 .CarSegment h2 {
   margin: 10px;
 }
 
-.CarSegment h3 {
+.CarSegment p {
   margin: 10px;
+  width: 100%;
 }
 
 .CarSegment img {
-  height: 150px;
-  margin: 10px;
+  width: 100%;
+  background: radial-gradient(ellipse at center, rgba(100, 100, 150, 0.4) 10%, transparent);
 }
 
 .CarSegment li {
