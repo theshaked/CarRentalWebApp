@@ -4,8 +4,11 @@ const CarModel = ({ model }) =>
 {
     return (
         <div className="CarModel Grow LightCard">
+            <div className="SamePostion">
+                <img className="Grayscale" alt="heart" id="Heart" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg" />
+                <img alt="car" id="Car" src={model.img} />
+            </div>
 
-            <img alt="car" id="Car" src={model.img} />
             <div className="flex-row">
                 <img id="Logo" alt="logo" src={model.logo} />
                 <div className="bold">
