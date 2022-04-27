@@ -48,6 +48,16 @@ button {
   border-radius: 5px;
 }
 
+.ButtonEffects:hover {
+  transition: all .1s ease-in-out;
+  box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .2);
+}
+
+.ButtonEffects:active {
+  transition: all .1s ease-in-out;
+  transform: scale(0.95);
+}
+
 button:hover {
   transition: all .1s ease-in-out;
   box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .3);
