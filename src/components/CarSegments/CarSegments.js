@@ -45,7 +45,9 @@ const CarSegments = () =>
       </div>
       <ul>
         {carsArr.map((car) => (
-          <CarSegment type={car.type} imgsrc={car.img} review={car.review} />
+          <CarSegment type={car.type}
+            SDate={startDate?.toISOString().split('T', 1)[0]}
+            EDate={finishDate?.toISOString().split('T', 1)[0]} imgsrc={car.img} review={car.review} />
         ))}
       </ul>
     </div>

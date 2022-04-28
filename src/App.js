@@ -16,7 +16,7 @@ function App()
       <BrowserRouter>
         <Navbar token={token} />
         <Routes>
-          <Route path="CarPicker/:segmentName" element={<CarModels />} />
+          <Route path="CarPicker/:segmentName/:SDate/:EDate" element={<CarModels />} />
           <Route exact path="CarPicker" element={<CarSegments />} />
           <Route path="SignUp" element={<SignUp />} />
           <Route path="Login" element={<Login setToken={setToken} />} />

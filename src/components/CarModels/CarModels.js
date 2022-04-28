@@ -2,6 +2,7 @@ import "./CarModels.css";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from 'react'
 import CarModel from "../CarModel/CarModel.js";
+import { DaysBetweenDates } from "../../Utils/DateTime"
 const CarModels = () =>
 {
 
@@ -25,15 +26,16 @@ const CarModels = () =>
         return data;
     };
 
-    const { segmentName } = useParams(); //TODO use query-string lib
+    const { segmentName, SDate, EDate } = useParams(); //TODO use query-string lib
+    const duration = DaysBetweenDates(new Date(SDate), new Date(EDate));
     const segmentModels = cars.filter(model => model.type == segmentName)
     return (
         segmentModels == 0 ? <h1>There is no {segmentName} in our inventory , try other segment</h1> :
             <div className="CarModels">
-                <h1>This is all the {segmentName} cars in our inventory:</h1>
+                <h1>{segmentName} cars in our inventory from </h1>
                 <ul>
                     {segmentModels.map((model) => (
-                        <CarModel model={model} />
+                        <CarModel model={model} duration={duration} />
                     ))}
                 </ul>
             </div>

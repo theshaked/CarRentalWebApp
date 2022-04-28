@@ -1,10 +1,10 @@
 import "./CarSegment.css";
 import { Link } from "react-router-dom";
 
-const CarSegment = ({ type, imgsrc, review }) =>
+const CarSegment = ({ type, SDate, EDate, imgsrc, review }) =>
 {
   return (
-    <Link to={type}>
+    <Link to={type + "/" + SDate + "/" + EDate}>
       <div className="CarSegment ButtonEffects LightCard">
         <img alt="car" src={imgsrc} />
         <li>

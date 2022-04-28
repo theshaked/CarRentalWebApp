@@ -1,7 +1,16 @@
 import "./CarModel.css";
 
-const CarModel = ({ model }) =>
+const CarModel = ({ model, duration }) =>
 {
+    const OrderCar = async () =>
+    {
+        //const res = await fetch("http://localhost:5000/cars");
+        //const data = await res.json();
+
+        //return data;
+        console.log("OrderCar");
+    };
+
     return (
         <div className="CarModel Grow LightCard">
             <div className="SamePostion">
@@ -28,10 +37,10 @@ const CarModel = ({ model }) =>
                 <td className="bold">{model.pricePerDay}₪</td>
             </tr>
             <tr>
-                <td>Price Per Week:</td>
-                <td className="bold">{7 * model.pricePerDay}₪</td>
+                <td>Price for {duration} days:</td>
+                <td className="bold">{duration * model.pricePerDay}₪</td>
             </tr>
-            <button>Order!</button>
+            <button onClick={OrderCar}>Order!</button>
         </div>
     );
 };
