@@ -17,13 +17,13 @@ const Login = ({ setToken }) =>
 
     return (
         <div className="Login">
-            <h1>Sign Up</h1>
-            <form onSubmit={onSubmit}>
+
+            <form className="LightCard" onSubmit={onSubmit}>
                 <TextEntry onChange={setUsername} fieldName="Username" required={true} fieldType="text" borderless={true} />
 
                 <TextEntry onChange={setPassword} fieldName="Password" required={true} fieldType="password" borderless={true} />
 
-                <input className="Grow" id="signIn" type="submit" />
+                <input className="ButtonLook ButtonEffects" id="signIn" type="submit" />
             </form >
         </div >
     );

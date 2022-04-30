@@ -25,8 +25,7 @@ const SignUp = () =>
 
   return (
     <div className="SignUp">
-      <h1>Sign Up</h1>
-      <form onSubmit={onSubmit}>
+      <form className="LightCard" onSubmit={onSubmit}>
 
         <TextEntry onChange={setFullname} fieldName="Full Name" required={true} fieldType="text" minLength="3" maxLength="20"
           validityMsg="At least 3 letters" regex="[A-Za-z\u0590-\u05FF]{3,20}" />
@@ -49,7 +48,7 @@ const SignUp = () =>
 
         <ImgEntry required={false} onChange={setImg} fieldName="Image" />
 
-        <input className="Grow" id="submit" type="submit" />
+        <input className="ButtonLook ButtonEffects" id="submit" type="submit" />
       </form >
     </div >
   );
