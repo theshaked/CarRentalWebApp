@@ -24,8 +24,10 @@ const DateStartFinish = ({ setValidDates, setStartDate, setFinishDate }) =>
 
     return (
         <div className="DateStartFinish">
-            <TextEntry required={true} fieldName="Start" fieldType="date" onChange={e => setStart(new Date(e))} />
-            <TextEntry required={true} fieldName="Finish" fieldType="date" onChange={e => setFinish(new Date(e))} />
+            <input required type="date" onChange={e => setStart(new Date(e.target.value))} min={new Date(new Date().getTime() + 86400000).toISOString().split('T')[0]} />
+            <p>till</p>
+            <input required type="date" onChange={e => setFinish(new Date(e.target.value))} min={start?.toISOString().split('T', 1)[0]} />
+
         </div>
     );
 };

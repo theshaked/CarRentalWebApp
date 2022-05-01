@@ -39,7 +39,7 @@ const CarSegments = () =>
 
   return (
     <div className="CarSegments">
-      <div className="DateRow">
+      <div className="LightCard">
         <DateStartFinish setValidDates={setValidDates} setStartDate={setStartDate} setFinishDate={setFinishDate} />
         {validDates ? <h1>Rental time of {duration} Days</h1> : <h1>Please insert valid dates</h1>}
       </div>

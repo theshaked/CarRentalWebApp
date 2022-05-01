@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import logo from '../../images/GlobusCarsLogoBlueCrop.png';
+import logo from '../../images/GlobusCarsLogoGreen.png';
 
 const Navbar = ({ token }) =>
 {

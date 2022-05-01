@@ -5,11 +5,7 @@
 
 .CarSegment h2 {
   margin: 10px;
-}
-
-.CarSegment p {
-  margin: 10px;
-  width: 100%;
+  background: radial-gradient(ellipse at center, rgba(70, 131, 180, 0.15), transparent);
 }
 
 .CarSegment img {

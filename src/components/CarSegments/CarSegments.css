@@ -1,9 +1,5 @@
 .CarSegments {
-}
-
-.CarSegments .DateRow{
-  display: grid;
-  grid-template-columns: auto auto;
+  display: inline-block;
   text-align: center;
 }
 
