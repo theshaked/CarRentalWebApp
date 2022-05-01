@@ -25,13 +25,13 @@ const CarModel = ({ model, duration }) =>
                     <p>{model.modelName}</p>
                 </div>
             </div>
-            <line />
+            <hr />
             <tr>
                 <td>Model year:</td>
                 <td>{model.year}</td>
             </tr>
             <p>{model.review}</p>
-            <line />
+            <hr />
             <tr>
                 <td>Price Per Day:</td>
                 <td className="bold">{model.pricePerDay}₪</td>

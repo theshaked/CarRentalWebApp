@@ -1,4 +1,4 @@
 export const DaysBetweenDates = (dateStart, dateFinish) =>
 {
-    return (dateFinish.getTime() - dateStart.getTime()) / (1000 * 3600 * 24);
+    return (dateFinish.getTime() - dateStart.getTime()) / (1000 * 3600 * 24) + 1;
 };

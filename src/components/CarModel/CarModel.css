@@ -4,7 +4,6 @@
 }
 
 .CarModel * {
-  padding: 1px;
   font-size: 18px;
 }
 
@@ -24,7 +23,8 @@
   margin: 5px;
 }
 
-.CarModel line {
+.CarModel hr {
+  border: 0px;
   border-top: 1px solid rgba(0, 0, 0, .1);
   margin: 0.5rem;
 }
